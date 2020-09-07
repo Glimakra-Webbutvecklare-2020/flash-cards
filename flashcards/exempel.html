@@ -1,0 +1,62 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flashcard - Exempelämne</title>
+        <script src="../scripts/toggleAnswer.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Exempelämne</h1>
+            <img src="http://via.placeholder.com/480x320" alt="image" />
+            <hr />
+        </header>
+        <main>
+            <!-- It can be a simple question/answer -->
+            <section>
+                <p id="question1">Vad heter exempel på latin?</p>
+                <p id="answer1" hidden>exempli gratia</p>
+                <button onclick="toggleAnswer(answer1)">Se svar</button>
+            </section>
+            <hr />
+
+            <!-- Or you can have a longer expaination-->
+            <section>
+                <p id="question2">Vad är kan ordet exempel betyda?</p>
+
+                <p id="answer2" hidden>
+                    <b>Faktum</b> som gäller men endast är ett specialfall av
+                    ett (viktigare och) mer allmängiltigt faktum eller föremål
+                    som ingår i en större mängd av liknande föremål föredöme,
+                    mönster. <br />
+
+                    <b>Fraser</b> (konkreta) följa någons exempel, föregå med
+                    gott exempel, statuera (ett) exempel, ta exempel av någon,
+                    tjäna som (ett) exempel. <br />
+
+                    <b>Matematik</b> vilket fall eller vilken uppgift som helst
+                    inom definierade regler.
+                </p>
+                <button onclick="toggleAnswer(answer2)">Se svar</button>
+            </section>
+            <hr />
+
+            <!-- Or it can you present some alternatives -->
+            <section>
+                <p id="question3">Vad heter exempel på tyska?</p>
+                <ul type="a">
+                    <li>Eine Exempel</li>
+                    <li>Eine Forschlage</li>
+                    <li>Ein Beispiel</li>
+                </ul>
+                <p id="answer3" hidden>c) Ein Beispiel</p>
+                <button onclick="toggleAnswer(answer3)">Se svar</button>
+            </section>
+            <hr />
+        </main>
+        <footer>
+            <p><a href="../index.html">Tillbaka hem</a></p>
+            <cite>Skriven av Henry Bergström, september, 2020</cite>
+        </footer>
+    </body>
+</html>
