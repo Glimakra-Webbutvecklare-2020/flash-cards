@@ -1,2 +1,2 @@
-# flash-cards
-En samlingsida för flash cards
+# Flash Cards
+En samlingsida för flash cards.
