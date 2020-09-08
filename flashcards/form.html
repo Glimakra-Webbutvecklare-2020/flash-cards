@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vad är en Form?</title>
+    <script src="../scripts/toggleAnswer.js"></script>
+</head>
+<body>
+    <main>
+        <article>
+        <h1>Vad är en form?</h1>
+        <p>Form är det engelska namnet på ordet formulär. Men i detta sammanhang kommer jag prata om en HTML baserad form och dess struktur.</p>
+
+        <hr>
+        <section>
+
+    <h2>Struktur</h2>
+
+    <p>Form består utav en form-tagg och denna form kan innehålla en rad olika element som utgör inehållet i formuläret, men en form får <b>aldrig</b> vara en färelder till ett form element</p>
+    <hr>
+</section>
+
+<section>
+    <h2>Exempel på ett formulärs syntax i HTML</h2>
+
+    <img src="../assets/formexempel.png" alt="Ett exempel på en forms syntax och tillhörande child-elements" width="700">
+    <figcaption>Syntax för en form med tillhörande child-element</figcaption>
+
+    <hr>
+    <p>Tryck nedan för att see vad kodan över ger för resultat</p>
+
+    <!--Jag tror detta bryter mot reglerna vid valedering!-->
+
+    <button onclick="toggleAnswer(form1)">Visa form</button>
+
+    <form id="form1" action=".html" method="POST" hidden>
+        <ul>
+        <li>Är du nöjd med min hemsida?</li>
+        <li><input type="radio" name="asikt" id="ja" value="ja" checked><label for="ja">Ja</label></li>
+        <li><input type="radio" name="asikt" id="nej" value="nej"><label for="nej">Nej</label></li>
+         <li><label for="kommentar">Skriv kort om varför</label></li>
+         <li><textarea name="kommentar" id="kommentar" cols="40" rows="10" placeholder="Varför hatar du min hemsida?"></textarea> </li>
+         <li><input type="submit" value="Skicka in"><input type="reset" value="Börja om"></li>
+        </ul>
+        </form>
+<hr>
+</section>
+
+<footer>
+    <p>Skriven av Martin Larsson</p>
+</footer>
+    </article>
+
+
+    
+    
+    </main>
+    
+</body>
+</html>
