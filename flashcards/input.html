@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard - Input</title>
+    <script src="../scripts/toggleAnswer.js"></script>
+</head>
+<body>
+   <header>
+       <h1>Vad är en input?</h1>
+       <img src="" alt="">
+       <hr />
+   </header> 
+   <main>
+        <!-- fråga 1 -->
+        <p id="question1">Vad specificerar en inputtagg?</p>
+
+        <p id="answer1" hidden>Ett fält där användren kan skriva in indata.</p>
+        <button onclick="toggleAnswer(answer1)">Se svar</button>
+        <hr />
+
+        <!-- fråga 2 -->
+        <p id="question2">Vilket annat element bör använda när man använder ett input-element?</p>
+
+        <p id="answer2" hidden>Ett lable element</labla></p>
+        <button onclick="toggleAnswer(answer2)">Se svar</button>
+        <hr />
+        <!-- fråga 3 -->
+        <p id="question3">Vad är default typen för ett label-element</p>
+        <p id="answer3" hidden>"text"</p>
+        <button onclick="toggleAnswer(answer3)">Se svar</button>
+        <hr />
+   </main>
+</body>
+</html>
