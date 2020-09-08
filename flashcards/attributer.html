@@ -4,6 +4,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Flashcard - Attributer</title>
         <script src="../scripts/toggleAnswer.js"></script>
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+            }
+            summary:hover {
+                cursor: pointer;
+                color: green;
+            }
+
+            summary:focus {
+                outline: none;
+            }
+
+            details p {
+                border: 4px solid green;
+                padding: 1em;
+            }
+
+            section, header, footer {
+                padding: 1em;
+            }
+
+            header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            footer {
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -14,37 +49,46 @@
         <main>
             <!-- It can be a simple question/answer -->
             <section>
-                <p id="question1">Vad heter attributer på latin?</p>
+                <details>
+                    <summary title="Visa svar">Vad heter attributer på latin?</summary>
 
-                <p id="answer1" hidden>rerum</p>
-                <button onclick="toggleAnswer(answer1)">Se svar</button>
+                    <p>Svar: rerum</p>
 
+                </details>
             </section>
             <hr />
 
             <!-- Or you can have a longer expaination-->
             <section>
-                <p id="question2">Vad är kan ordet attribut betyda?</p>
+                <details>
+                    <summary title="Visa svar">Vad är kan ordet attribut betyda?</summary>
 
-                <p id="answer2" hidden>
-                    <b>Faktum</b> Attribut är ett ord, som vi använder när vi vill berätta mer om det viktigaste i en satsdel.<br>
-                    <b>Fraser</b>  Jag vill ha en <mark>tallrik</mark> müsli<br>
-                    <b>Matematik</b>  Det kommer ifrån en speciell gren inom matematiken där man räknar med sanningsvärde; saker är antingen sanna eller falska och inget annat. Det faktum att attributet förekommer gör att det är ”sant”, medans då det inte förekommer så är det ”falskt”.<br>
-                </p>
-                <button onclick="toggleAnswer(answer2)">Se svar</button>
+                    <p>
+                        <b>Faktum</b> Attribut är ett ord, som vi använder när vi vill berätta mer om det viktigaste i en satsdel.<br>
+                        <b>Fraser</b>  Jag vill ha en <mark>tallrik</mark> müsli<br>
+                        <b>Matematik</b>  Det kommer ifrån en speciell gren inom matematiken där man räknar med sanningsvärde; saker är antingen sanna eller falska och inget annat. Det faktum att attributet förekommer gör att det är ”sant”, medans då det inte förekommer så är det ”falskt”.<br>
+                    </p>
+
+                </details>
             </section>
             <hr />
 
             <!-- Or it can you present some alternatives -->
             <section>
-                <p id="question3">Vad heter attribut på tyska?</p>
-                <ul type="a">
-                    <li>Wagen</li>
-                    <li>das Attribut</li>
-                    <li>Hauptstadt</li>
-                </ul>
-                <p id="answer3" hidden>b) das Attribut</p>
-                <button onclick="toggleAnswer(answer3)">Se svar</button>
+                <details>
+                    <summary title="Visa svar">Vad heter attribut på tyska?
+                        <ul>
+                            <li>Wagen</li>
+                            <li>das Attribut</li>
+                            <li>Hauptstadt</li>
+                        </ul>
+                    </summary>
+
+                    <p>
+                        b) das Attribut
+                    </p>
+
+                </details>
             </section>
             <hr />
         </main>
