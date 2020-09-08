@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element</title>
+    <script src="../scripts/toggleAnswer.js"></script>
+</head>
+<body>
+    <hr>
+    <section>
+        <p id="question1">
+            Vilket element används för att skriva vanlig text i HTML?
+        </p>
+        <p id="answer1" hidden>
+            p-taggen, som står för "paragraph". 
+        </p>
+        <button onclick="toggleAnswer(answer1)">Se svar</button>
+    </section>
+    <hr>
+    <section>
+        <p id="question2">
+            Vad är skillnaden på ett block-element och ett inline-element?
+            <ul>
+                <li>a) Ett block-element "blockerar" det som står innanför det så att det inte syns, medan ett inline-element visar det som är innanför det på samma rad.</li>
+                <li>b) Ett block-element skapar alltid en tom linje efter sin slut-tagg, medan ett inline-element fortsätter att skriva på samma rad.</li>
+                <li>c) Alla block-element får automatiskt en svart "box" omkring sig, som liknar ett block, medan inline-element beter sig som vanlig text.</li>
+            </ul>
+        </p>
+        <p id="answer2" hidden>
+            <b>b)</b> Ett block-element skapar alltid en tom linje efter sin slut-tagg, medan ett inline-element fortsätter att skriva på samma rad.
+        </p>
+        <button onclick="toggleAnswer(answer2)">Se svar</button>
+    </section>
+    <hr>
+    <footer>
+        <p><a href="../index.html">Tillbaka hem</a></p>
+        <cite>Skriven av Joseph Stameus, september, 2020</cite>
+    </footer>
+</body>
+</html>
