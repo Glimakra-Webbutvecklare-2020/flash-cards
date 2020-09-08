@@ -1,14 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Element</title>
+    <title>Vad är ett element? (HTML)</title>
     <script src="../scripts/toggleAnswer.js"></script>
 </head>
+
 <body>
-    <hr>
-    <section>
+    <main>
+        <article>
+            <h1>Vad är ett element? (HTML)</h1>
+
+            <p>Ordet "element" har olika betydelser i vilket sammanhang man anväder den i, men i detta fall ämnar det
+                till vad ett element är inom märkesspråket HTML (Hypertext Markup language)</p>
+            <section>
+                <h2>Ett html elements struktur</h2>
+
+                <img src="../assets/htmlelement.png" alt="Ett html elements struktur" width="500">
+                <figcaption>Den basiska strukturen av ett HTML element</figcaption>
+
+                <hr>
+            </section>
+            <section>
+                <h3>Vad är ett element?</h3>
+
+
+                <p id="a1" hidden>
+                    Ett element i detta sammanhang är "container", d.v.s en "space" som inehåller ett uppmärkning av
+                        två (eller fler) "taggar" (märken) och dessa taggar inehåller en "massa" av det som du vill ska
+                        visas i b.la. webbläsaren
+                </p>
+
+                <button onclick="toggleAnswer(a1)">Se svar</button>
+
+                <hr>
+            </section>
+            <section>
+                
+                <h3>Undantag?</h3>
+                <p id="a2" hidden>Viktigt att veta är att många taggar består av en starttag och en sluttag, men kom dock ihåg att det
+                    finns taggar som b.la <i>inte</i> har en sluttagg, samt element som är tomma, mer om detta nedan.</p>
+
+            
+                    <button onclick="toggleAnswer(a2)">Se undantag</button>
+
+                    <hr>
+                </section>
+ <section>
         <p id="question1">
             Vilket element används för att skriva vanlig text i HTML?
         </p>
@@ -32,10 +72,13 @@
         </p>
         <button onclick="toggleAnswer(answer2)">Se svar</button>
     </section>
-    <hr>
+      
     <footer>
         <p><a href="../index.html">Tillbaka hem</a></p>
-        <cite>Skriven av Joseph Stameus, september, 2020</cite>
+        <cite>Skriven av Joseph Stameus och Martin Larsson, september, 2020</cite>
     </footer>
+
+        </article>
+    </main>
 </body>
 </html>
