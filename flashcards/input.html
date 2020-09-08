@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <script src="../scripts/toggleAnswer.js"></script>
+</head>
+<body>
+    <hr>
+    <section>
+        <p id="question1">Vad gör input-taggen i HTML?</p>
+        <ul>
+            <li>a) Söker efter specifika knapptryck på tangentbordet, till exempel Space, G eller Ctrl</li>
+            <li>b) Ingenting för användaren, den används bara för programmerare bakom kulisserna</li>
+            <li>c) Låter besökaren på webbplatsen skriva in information till webbplatsen</li>
+        </ul>
+        <p id="answer1" hidden>
+            <b>c)</b> Låter besökaren på webbplatsen skriva in information till webbplatsen. <br> 
+            Det kan bara saker som text, nummer, e-post och datum, information som sedan kan skickas vidare och bevaras i en databas.
+        </p>
+        <button onclick="toggleAnswer(answer1)">Se svar</button>
+    </section>
+    <hr>
+    <section>
+        <p id="question2">Varför ska du inte använda GET-attributet i formulär som hanterar känslig info, tex lösenord?</p>
+        <p id="answer2" hidden>
+            För att den visar infon som användaren har skrivit in direkt i adressfältet och är därför helt oskyddad.
+        </p>
+        <button onclick="toggleAnswer(answer2)">Se svar</button>
+    </section>
+    <hr>
+        
+</body>
+</html>
