@@ -1,0 +1,56 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flashcard - Snyggt</title>
+        <script src="../scripts/toggleAnswer.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Vad betyder ordet snyggt?</h1>
+            <img src="../assets/snyggt.png" alt="image" width="480" height="320"/>
+            <hr />
+        </header>
+        <main>
+            <!-- It can be a simple question/answer -->
+            <section>
+                <p id="question1">Vad heter snyggt på latin?</p>
+                <p id="answer1" hidden>nice quod</p>
+                <button onclick="toggleAnswer(answer1)">Se svar</button>
+            </section>
+            <hr />
+
+            <!-- Or you can have a longer expaination-->
+            <section>
+                <p id="question2">Vad är kan ordet snyggt betyda?</p>
+
+                <p id="answer2" hidden>
+                    <b>1.</b> vacker, stilig <br />
+
+                    <b>2.</b> ren, ordentlig <br />
+
+                    <b>3.</b> med ett utseende som åstadkommer välmående hos betraktaren; med ett utseende som betraktaren önskar; med ett tilltalande utseende
+                </p>
+                <button onclick="toggleAnswer(answer2)">Se svar</button>
+            </section>
+            <hr />
+
+            <!-- Or it can you present some alternatives -->
+            <section>
+                <p id="question3">Vad heter snyggt på tyska?</p>
+                <ul type="a">
+                    <li>Unterbard</li>
+                    <li>Nett</li>
+                    <li>Wunderbar</li>
+                </ul>
+                <p id="answer3" hidden>c) Nett</p>
+                <button onclick="toggleAnswer(answer3)">Se svar</button>
+            </section>
+            <hr />
+        </main>
+        <footer>
+            <p><a href="../index.html">Tillbaka hem</a></p>
+            <cite>Skriven av Isak Granqvist, september, 2020</cite>
+        </footer>
+    </body>
+</html>
