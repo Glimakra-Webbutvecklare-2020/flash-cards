@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcard - input</title>
+    <script src="../scripts/toggleAnswer.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Input</h1>
+        <img src="https://www.forcepoint.com/sites/default/files/styles/large/public/hero/x-labs.png?itok=Ko8JKpBJ" alt="image" />
+        <hr />
+    </header>
+    <main>
+        <section>
+            <p id="question1">Vilken input type använder du för text</p>
+            <p id="answer1" hidden>type="text"</p>
+            <button onclick="toggleAnswer(answer1)">Se svar</button>
+        </section>
+        <hr />
+        <section>
+            <p id="question2">Hur många olika typer av input finns det?</p>
+
+            <p id="answer2" hidden><b>22 st</b> olika typer av input finns just nu i html5.</p>
+            <button onclick="toggleAnswer(answer2)">Se svar</button>
+        </section>
+        <hr />
+        <section>
+            <p id="question3">Vilken input använder man för mobilnummer?</p>
+            <ol type="a">
+                <li>&#60;input type="text"&#62;</li>
+                <li>&#60;input type="tel"&#62;</li>
+                <li>&#60;input type="number"&#62;</li>
+            </ol>
+            <p id="answer3" hidden>b. &#60;input type="tel"&#62;</p>
+            <button onclick="toggleAnswer(answer3)">Se svar</button>
+        </section>
+        <hr />
+    </main>
+    <footer>
+        <p><a href="../index.html">Tillbaka hem</a></p>
+        <cite>Skriven av Beff Henriksson, september, 2020</cite>
+    </footer>
+</body>
+
+</html>
