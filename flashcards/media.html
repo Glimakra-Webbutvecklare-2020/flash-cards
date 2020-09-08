@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,12 +35,34 @@
             </p>
             <button onclick="toggleAnswer(answer2)">Se svar</button>
         </section>
+      <section>
+        <p id="question3">
+            Vilka är de två vanligaste filtyperna för bilder?
+        </p>
+        <p id="answer3" hidden>
+            JPEG och PNG. JPEG är lite lättare men får sämre bildkvalitet, eftersom den komprimerar bilden. PNG ger oftast bättre kvalitet, men är lite tyngre och bör därför användas med måtta om du ska ha många bilder. 
+        </p>
+        <button onclick="toggleAnswer(answer1)">Se svar</button>
+    </section>
+    <section>
+        <p id="question4">
+            Vad används "alt"-attributet för när man använder bilder i HTML?
+            <ul>
+                <li>a) För att kunna visa en annan bild om den första inte kan hittas</li>
+                <li>b) För att göra bilden till en klickbar länk</li>
+                <li>c) För att kunna skriva in en beskrivning av bilden så att den kan läsas av synskadade användare</li>
+            </ul>
+        </p>
+        <p id="answer4" hidden>
+            <b>c)</b> För att kunna skriva in en beskrivning av bilden så att den kan läsas av synskadade användare. Beskrivningen kan då läsas upp av datorn.
+        </p>
+        <button onclick="toggleAnswer(answer2)">Se svar</button>
+    </section>
         <hr />
     </main>
     <footer>
         <p><a href="../index.html">Tillbaka hem</a></p>
-        <cite>Skriven av Mikael Zeylon, september, 2020</cite>
+        <cite>Skriven av Mikael Zeylon och Joseph Stameus, september, 2020</cite>
     </footer>
 </body>
-
 </html>
