@@ -2,8 +2,9 @@
 
 En samlingsida för flash cards.
 
-## Göra en flash card sida
+## Hur gör man en sida?
 
 1.  Välj ett ämne i innehållsförteckningen som inte är implementerad än.
 2.  Hitta minst tre frågor (gärna mer) om givet ämne.
-3.  Titta på exempel.html för att se format exempel.
+3.  Gör ett nytt html dokument i flashcards-mappen med passande namn
+4.  Fyll i frågorna och svaren. Se exempel `flash-cards/exempel.html`
