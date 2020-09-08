@@ -1,24 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcard - Media</title>
     <script src="../scripts/toggleAnswer.js"></script>
 </head>
+
 <body>
-    <hr>
-    <section>
-        <p id="question1">
+    <header>
+        <h1>Media</h1>
+        <img src="" alt="" />
+        <hr />
+    </header>
+    <main>
+        <!-- It can be a simple question/answer -->
+        <section>
+            <p id="question1">Med vilka element kan media-attributet användas?</p>
+            <p id="answer1" hidden>
+                a-element <br>
+                area-element <br>
+                link-element <br>
+                source-element <br>
+                style-element.
+            </p>
+            <button onclick="toggleAnswer(answer1)">Se svar</button>
+        </section>
+        <hr />
+        <section>
+            <p id="question2">Vark kan man hitta bra information om media-element?</p>
+
+            <p id="answer2" hidden>
+                <a href="https://www.w3schools.com/tags/att_media.asp" target="_blank">www.w3schools.com</a>
+            </p>
+            <button onclick="toggleAnswer(answer2)">Se svar</button>
+        </section>
+      <section>
+        <p id="question3">
             Vilka är de två vanligaste filtyperna för bilder?
         </p>
-        <p id="answer1" hidden>
+        <p id="answer3" hidden>
             JPEG och PNG. JPEG är lite lättare men får sämre bildkvalitet, eftersom den komprimerar bilden. PNG ger oftast bättre kvalitet, men är lite tyngre och bör därför användas med måtta om du ska ha många bilder. 
         </p>
         <button onclick="toggleAnswer(answer1)">Se svar</button>
     </section>
     <section>
-        <p id="question2">
+        <p id="question4">
             Vad används "alt"-attributet för när man använder bilder i HTML?
             <ul>
                 <li>a) För att kunna visa en annan bild om den första inte kan hittas</li>
@@ -26,14 +53,16 @@
                 <li>c) För att kunna skriva in en beskrivning av bilden så att den kan läsas av synskadade användare</li>
             </ul>
         </p>
-        <p id="answer2" hidden>
+        <p id="answer4" hidden>
             <b>c)</b> För att kunna skriva in en beskrivning av bilden så att den kan läsas av synskadade användare. Beskrivningen kan då läsas upp av datorn.
         </p>
         <button onclick="toggleAnswer(answer2)">Se svar</button>
     </section>
+        <hr />
+    </main>
     <footer>
         <p><a href="../index.html">Tillbaka hem</a></p>
-        <cite>Skriven av Joseph Stameus, september, 2020</cite>
+        <cite>Skriven av Mikael Zeylon och Joseph Stameus, september, 2020</cite>
     </footer>
 </body>
 </html>
