@@ -32,5 +32,72 @@
         <button onclick="toggleAnswer(answer3)">Se svar</button>
         <hr />
    </main>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcard - input</title>
+    <script src="../scripts/toggleAnswer.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Input</h1>
+        <img src="https://www.forcepoint.com/sites/default/files/styles/large/public/hero/x-labs.png?itok=Ko8JKpBJ" alt="image" />
+        <hr />
+    </header>
+    <main>
+        <section>
+            <p id="question1">Vilken input type använder du för text</p>
+            <p id="answer1" hidden>type="text"</p>
+            <button onclick="toggleAnswer(answer1)">Se svar</button>
+        </section>
+        <hr />
+        <section>
+            <p id="question2">Hur många olika typer av input finns det?</p>
+
+            <p id="answer2" hidden><b>22 st</b> olika typer av input finns just nu i html5.</p>
+            <button onclick="toggleAnswer(answer2)">Se svar</button>
+        </section>
+        <hr />
+        <section>
+            <p id="question3">Vilken input använder man för mobilnummer?</p>
+            <ol type="a">
+                <li>&#60;input type="text"&#62;</li>
+                <li>&#60;input type="tel"&#62;</li>
+                <li>&#60;input type="number"&#62;</li>
+            </ol>
+            <p id="answer3" hidden>b. &#60;input type="tel"&#62;</p>
+            <button onclick="toggleAnswer(answer3)">Se svar</button>
+        </section>
+        <hr />
+    <section>
+        <p id="question1">Vad gör input-taggen i HTML?</p>
+        <ul>
+            <li>a) Söker efter specifika knapptryck på tangentbordet, till exempel Space, G eller Ctrl</li>
+            <li>b) Ingenting för användaren, den används bara för programmerare bakom kulisserna</li>
+            <li>c) Låter besökaren på webbplatsen skriva in information till webbplatsen</li>
+        </ul>
+        <p id="answer1" hidden>
+            <b>c)</b> Låter besökaren på webbplatsen skriva in information till webbplatsen. <br> 
+            Det kan bara saker som text, nummer, e-post och datum, information som sedan kan skickas vidare och bevaras i en databas.
+        </p>
+        <button onclick="toggleAnswer(answer1)">Se svar</button>
+    </section>
+    <hr>
+    <section>
+        <p id="question2">Varför ska du inte använda GET-attributet i formulär som hanterar känslig info, tex lösenord?</p>
+        <p id="answer2" hidden>
+            För att den visar infon som användaren har skrivit in direkt i adressfältet och är därför helt oskyddad.
+        </p>
+        <button onclick="toggleAnswer(answer2)">Se svar</button>
+    </section>
+    <hr>
+    </main>
+    <footer>
+        <p><a href="../index.html">Tillbaka hem</a></p>
+        <cite>Skriven av Beff Henriksson och Joseph Stameus, september, 2020</cite>
+    </footer>
 </body>
 </html>
