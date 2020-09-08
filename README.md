@@ -1,6 +1,6 @@
 # Flash Cards
 
-En samlingsida för flash cards.
+En samlingsida för flash cards författad av deltagare på Glimåkra Webbutvecklare 2020.
 
 ## Hur gör man en sida?
 
